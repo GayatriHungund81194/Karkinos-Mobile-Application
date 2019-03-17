@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_profile"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="View Profile" />
+        <item
+            android:id="@+id/view_report"
+            android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+            android:title="View Report" />
+        <item
+            android:id="@+id/assist"
+            android:icon="@drawable/ic_mic_black_24dp"
+            android:title="Assist" />
+        <item
+            android:id="@+id/remind"
+            android:icon="@drawable/ic_add_alert_black_24dp"
+
+            android:title="Remind Me" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/call_doctor"
+                android:icon="@drawable/ic_phone_black_24dp"
+                android:title="Make a Call" />
+        </menu>
+    </item>
+
+    <item android:title="Sign Out">
+        <menu>
+            <item
+                android:id="@+id/signout"
+                android:icon="@drawable/ic_reply_black_24dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

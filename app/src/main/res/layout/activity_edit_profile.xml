@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightgray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="587dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="#00c3ff"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70sp"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <TextView
+
+                android:id="@+id/setname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250sp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Age"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/setage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Date of birth"
+
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/setdob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="198dp"
+                android:paddingLeft="20dp"
+                android:text="E-mail"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="150dp"
+                android:paddingLeft="20dp"
+                android:text="Phone No. "
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editphone"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/phone"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="129dp"
+                android:textColor="#00c3ff"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/emailid"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="129dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:layout_marginBottom="105dp"
+                android:layout_marginStart="21dp"
+                android:text="Blood Group"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editbloodgrp"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/bgroup"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="129dp"
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/bgroup"
+                android:layout_gravity="left"
+                android:layout_marginBottom="59dp"
+                android:text="Insurance No."
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editinsurance"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/insurance"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="129dp"
+
+                android:textSize="15dp" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/submit"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:width="70dp"
+        android:background="@drawable/roundedrect"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="20dp"
+        android:text="Submit"
+        android:textColor="#ffff" />
+
+
+</LinearLayout>

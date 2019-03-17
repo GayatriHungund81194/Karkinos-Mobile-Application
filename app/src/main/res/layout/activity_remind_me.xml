@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightgray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RemindMe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="587dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#00c3ff"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:width="70dp"
+            android:background="@drawable/roundedrect"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Remind"
+            android:textSize="20dp"
+            android:textColor="#ffff" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="374dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp" />
+
+        <TextView
+            android:id="@+id/remind"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="101dp"
+            android:text="Remind Me To:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/reminder"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/remind"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
